@@ -1,4 +1,4 @@
-import React from 'react'
+import React , { useCallback} from 'react'
 import Loading from '../components/Loading';
 import { useParams, Link} from 'react-router-dom';
 
@@ -11,7 +11,7 @@ const SingleCocktail = () => {
     const [cocktail, setCocktail] = React.useState(null);
 
 
-    const getCocktail = async()=> {
+    const getCocktail = useCallback( async()=> {
         setLoading(true);
         try{
             const response = await fetch(`${url}${id}`);
@@ -60,7 +60,7 @@ const SingleCocktail = () => {
         console.log(e)
 
         }
-    }
+    }, [i]);
     React.useEffect(()=> {
         getCocktail()
     }, [id])
