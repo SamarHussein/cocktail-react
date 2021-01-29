@@ -63,7 +63,7 @@ const SingleCocktail = () => {
     }, [id]);
     React.useEffect(()=> {
         getCocktail()
-    }, [id])
+    }, [id, getCocktail])
 
 
     if (loading) {
