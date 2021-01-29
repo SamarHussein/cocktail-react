@@ -1,4 +1,4 @@
-(cocktail-finder)[https://ecstatic-davinci-9cb74c.netlify.app/]
+[cocktail-finder](https://ecstatic-davinci-9cb74c.netlify.app/)
 
 # Getting Started with Create React App
 
